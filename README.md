@@ -44,7 +44,7 @@ Data Split: 80/20 into training and testing sets.
 7. Model Development
 
 Code Overview:
-``` pyhton
+```pyhton
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
