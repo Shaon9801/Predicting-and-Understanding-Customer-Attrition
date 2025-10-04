@@ -2,7 +2,7 @@
 
 ## Project Title:
 ## Customer Churn Analysis in Banking: Insights & Predictive Modelling
-<img width="1476" height="105" alt="image" src="https://github.com/user-attachments/assets/04c8372e-8e03-4dd3-8d84-614d5f763cfc" />
+!<img width="1476" height="105" alt="image" src="https://github.com/user-attachments/assets/04c8372e-8e03-4dd3-8d84-614d5f763cfc" />
 .
 ## Project Description
 This project analyzes pizza sales data using **SQL** to generate insights into revenue, customer behaviour, and sales trends. It aims to help businesses understand sales performance, customer preferences, and operational efficiency.
