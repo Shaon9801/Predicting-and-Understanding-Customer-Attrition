@@ -10,18 +10,17 @@ This project focuses on analyzing customer churn data for a retail bank to ident
 - `Model Interpretation & Insights:` Interpret model results and translate them into actionable business insights.
 
 ### Data Preparation and Cleaning:
--  Our first objective is to Import & Join two customer Data Tables, then Remove Duplicate Rows & Columns       and Fill in Missing Values.
--  Our Second Objective is to Clean the Data by fixing inconsistencies in labeling, handling erroneous          values, and fixing currency fields.
+-  Our first objective is to Import & Join two customer Data Tables, then Remove Duplicate Rows & Columns and Fill in Missing Values.
+-  Our Second Objective is to Clean the Data by fixing inconsistencies in labeling, handling erroneous values, and fixing currency fields.
+
+**Steps**
 -  Some libraries are used for data manipulation, numerical computations, and visualization.
 -  Data from two sheets are read — one for customer demographics and another for account-level details.
--  Datasets are merged on the CustomerId column to create a unified dataset.
-
-## Data Cleaning Steps:
-
-- Removed duplicates and irrelevant columns.
-- Imputed missing values using mean (for numeric) and mode (for categorical).
-- Standardized labels and ensured consistent data types.
-- Defined the target variable Exited (1 = churned, 0 = retained).
+-  Datasets are merged on the CustomerId column to create a unified dataset
+-  Removed duplicates and irrelevant columns.
+-  Imputed missing values using mean (for numeric) and mode (for categorical).
+-  Standardized labels and ensured consistent data types.
+-  Defined the target variable Exited (1 = churned, 0 = retained).
 
 ### Exploratory Data Analysis (EDA):
 1. Our third objective is to explore the target variable (Exited) and look at feature-target relationships      for categorical and numeric fields:
