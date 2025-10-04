@@ -3,7 +3,7 @@
 ## Project Title:
 # Customer Churn Analysis in Banking: Insights & Predictive Modelling
 ### Project Description
-This project analyzes pizza sales data using **SQL** to generate insights into revenue, customer behaviour, and sales trends. It aims to help businesses understand sales performance, customer preferences, and operational efficiency.
+This project focuses on analyzing customer churn data for a retail bank to identify the factors driving customer attrition and to build a predictive model that classifies customers as likely to churn or stay. The analysis combines data cleaning, exploratory data analysis (EDA), and machine learning classification techniques to uncover actionable insights for improving customer retention.
 ## Objectives:
 - `Import & Validate Data:`Import and quality-check two customer data tables.
 - `Data Preprocessing:`Clean, merge, and prepare the data for analysis.
