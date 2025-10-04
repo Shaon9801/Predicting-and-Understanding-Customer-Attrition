@@ -36,6 +36,9 @@ This project focuses on analyzing customer churn data for a retail bank to ident
 
 
 ### EDA Insights:
+[![pairplot.png](https://i.postimg.cc/mg0yQT8d/pairplot.png)](https://postimg.cc/0z0Sv1gm)
+
+[![Correlation.png](https://i.postimg.cc/cC3M62Nk/Correlation.png)](https://postimg.cc/BPq1Vhb2)
 
 - Low balance or fewer active products correlate with higher churn rates.
 - Geography and gender show moderate correlation with churn.
@@ -51,12 +54,16 @@ Our final objective is to prepare the data for modeling through feature selectio
 
 - Categorical Features: Encoded using OneHotEncoder (Gender, Geography).
 
+
+### For Model Evaluation
+
 - Continuous Variables: Scaled using StandardScaler.
 
 - Data Split: 80/20 into training and testing sets.
-
-### Model Evaluation
-
+- Finding
+[![ROC.png](https://i.postimg.cc/W3SZfVwh/ROC.png)](https://postimg.cc/k66DBkZm)
+[![Pecall.png](https://i.postimg.cc/RFP3LRv0/Pecall.png)](https://postimg.cc/TLDYRnL8)
+  
 ### Key Metrics:
 - Accuracy: ~86%
 - Precision: ~84%
@@ -64,6 +71,8 @@ Our final objective is to prepare the data for modeling through feature selectio
 - F1-Score: ~81%
   
 ### Feature Importance:
+
+[![important-feature.png](https://i.postimg.cc/SR2K7bZ1/important-feature.png)](https://postimg.cc/kRC9qzPW)
 
 CreditScore, Balance, Age, and NumberOfProducts are the strongest predictors of churn.
 
