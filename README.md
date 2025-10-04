@@ -1,5 +1,3 @@
-# Customer Churn Analysis in Banking
-
 ## Project Title:
 # Customer Churn Analysis in Banking: Insights & Predictive Modelling
 ### Project Description
