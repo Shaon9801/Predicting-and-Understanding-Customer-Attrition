@@ -24,7 +24,7 @@ This project analyzes pizza sales data using **SQL** to generate insights into r
 - Defined the target variable Exited (1 = churned, 0 = retained).
 
 ### Exploratory Data Analysis (EDA):
-!https://postimg.cc/BPq1Vhb2
+[![Correlation.png](https://i.postimg.cc/cC3M62Nk/Correlation.png)](https://postimg.cc/BPq1Vhb2)
 - Class imbalance is visible with fewer churned customers.
 - Churned customers generally have lower credit scores, indicating financial risk.
 - Higher churn is observed among customers aged 35–50.
