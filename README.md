@@ -1,7 +1,7 @@
-# Predicting-and-Understanding-Customer-Attrition
+# Customer Churn Analysis in Banking
 
 ## Project Title:
-### Customer Churn Analysis in Banking: Insights & Predictive Modelling
+# Customer Churn Analysis in Banking: Insights & Predictive Modelling
 ### Project Description
 This project analyzes pizza sales data using **SQL** to generate insights into revenue, customer behaviour, and sales trends. It aims to help businesses understand sales performance, customer preferences, and operational efficiency.
 ## Objectives:
