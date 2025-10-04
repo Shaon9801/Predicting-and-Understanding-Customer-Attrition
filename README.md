@@ -41,69 +41,41 @@ Continuous Variables: Scaled using StandardScaler.
 
 Data Split: 80/20 into training and testing sets.
 
-7. Model Development
+### Model Evaluation
 
-Code Overview:
-```pyhton
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, confusion_matrix
-
-X = churn_df.drop("Exited", axis=1)
-y = churn_df["Exited"]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-
-Random Forest Classifier is trained and tested on the dataset.
-
-rf = RandomForestClassifier(random_state=42)
-rf.fit(X_train, y_train)
-y_pred = rf.predict(X_test)
-```
-
-Model Evaluation:
-
-print(classification_report(y_test, y_pred))
-
-
-Key Metrics:
-
-Accuracy: ~86%
-
-Precision: ~84%
-
-Recall: ~79%
-
-F1-Score: ~81%
-
-Feature Importance:
+### Key Metrics:
+- Accuracy: ~86%
+- Precision: ~84%
+- Recall: ~79%
+- F1-Score: ~81%
+  
+### Feature Importance:
 
 CreditScore, Balance, Age, and NumberOfProducts are the strongest predictors of churn.
 
-8. Model Interpretation
+## Model Interpretation
 
-Key Insights:
+### Key Insights:
 
-Credit behavior and customer engagement are more indicative of churn risk than demographics.
+- Credit behavior and customer engagement are more indicative of churn risk than demographics.
+- The model can be used to target high-risk customers for retention efforts.
 
-The model can be used to target high-risk customers for retention efforts.
+### Conclusion
 
-9. Conclusion
+- `Summary:` The model achieved strong accuracy and is interpretable.
 
-Summary: The model achieved strong accuracy and is interpretable.
+`Key Findings:`
 
-Key Findings:
+- Middle-aged customers with low credit scores or low engagement are more likely to churn.
 
-Middle-aged customers with low credit scores or low engagement are more likely to churn.
+- Focus retention strategies on these groups with loyalty incentives and credit management education.
 
-Focus retention strategies on these groups with loyalty incentives and credit management education.
+## Further Analysis
 
-10. Further Analysis
+`Model Enhancement:` Explore XGBoost or LightGBM for potentially better performance.
 
-Model Enhancement: Explore XGBoost or LightGBM for potentially better performance.
+`Segmentation:` Implement K-Means clustering for customer segmentation.
 
-Segmentation: Implement K-Means clustering for customer segmentation.
+`Real-Time Alerts:` Develop a churn alert system integrated with CRM data.
 
-Real-Time Alerts: Develop a churn alert system integrated with CRM data.
-
-Model Explainability: Use SHAP analysis for deeper model interpretation.
+`Model Explainability:` Use SHAP analysis for deeper model interpretation.
