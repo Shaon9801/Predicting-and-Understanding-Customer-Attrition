@@ -5,16 +5,18 @@
 ### Project Description
 This project analyzes pizza sales data using **SQL** to generate insights into revenue, customer behaviour, and sales trends. It aims to help businesses understand sales performance, customer preferences, and operational efficiency.
 ## Objectives:
-- `Import & Validate Data:` Load and ensure the quality of two customer data tables.
-- `Data Preprocessing:` Clean, merge, and prepare the data for analysis.
-- `Exploratory Data Analysis (EDA):` Analyze churn patterns to uncover insights.
+- `Import & Validate Data:`Import and quality-check two customer data tables.
+- `Data Preprocessing:`Clean, merge, and prepare the data for analysis.
+- `Exploratory Data Analysis (EDA):`Analyze churn patterns to uncover insights.
 - `Model Development:` Build a predictive classification model to estimate churn probability.
 - `Model Interpretation & Insights:` Interpret model results and translate them into actionable business insights.
 
 ### Data Preparation and Cleaning:
-- Some libraries are used for data manipulation, numerical computations, and visualization.
-- Data from two sheets are read — one for customer demographics and another for account-level details.
-- Datasets are merged on the CustomerId column to create a unified dataset.
+-  Our first objective is to Import & Join two customer Data Tables, then Remove Duplicate Rows & Columns       and Fill in Missing Values.
+-  Our Second Objective is to Clean the Data by fixing inconsistencies in labeling, handling erroneous          values, and fixing currency fields.
+-  Some libraries are used for data manipulation, numerical computations, and visualization.
+-  Data from two sheets are read — one for customer demographics and another for account-level details.
+-  Datasets are merged on the CustomerId column to create a unified dataset.
 
 ## Data Cleaning Steps:
 
@@ -24,10 +26,14 @@ This project analyzes pizza sales data using **SQL** to generate insights into r
 - Defined the target variable Exited (1 = churned, 0 = retained).
 
 ### Exploratory Data Analysis (EDA):
-[![Correlation.png](https://i.postimg.cc/cC3M62Nk/Correlation.png)](https://postimg.cc/BPq1Vhb2)
-- Class imbalance is visible with fewer churned customers.
-- Churned customers generally have lower credit scores, indicating financial risk.
-- Higher churn is observed among customers aged 35–50.
+1. Our third objective is to explore the target variable (Exited) and look at feature-target relationships      for categorical and numeric fields:
+
+  2. Building a bar chart displaying the count of churners (Exited=1) vs. non-churners (Exited=0).
+  3. Exploring the categorical variables vs. the target, and look at the percentage of Churners by                “Geography” and “Gender”.
+  4. Building box plots for each numeric field, broken out by churners vs. non-churners.
+  5. Building histograms for each numeric field, broken out by churners vs. non-churner
+
+
 
 ### EDA Insights:
 
@@ -35,12 +41,19 @@ This project analyzes pizza sales data using **SQL** to generate insights into r
 - Geography and gender show moderate correlation with churn.
 - Tenure and estimated salary have minimal impact.
 ### Feature Engineering
+Our final objective is to prepare the data for modeling through feature selection, feature engineering, and data splitting:
 
-Categorical Features: Encoded using OneHotEncoder (Gender, Geography).
+- Creating a new dataset that excludes any columns that aren’t be suitable for modeling.
 
-Continuous Variables: Scaled using StandardScaler.
+- Creating Dummy Variables for categorical fields.
 
-Data Split: 80/20 into training and testing sets.
+- Create a new “balance_v_income” feature, which divides a customer’s bank balance by their estimated salary, then visualize that feature vs. churn status
+
+- Categorical Features: Encoded using OneHotEncoder (Gender, Geography).
+
+- Continuous Variables: Scaled using StandardScaler.
+
+- Data Split: 80/20 into training and testing sets.
 
 ### Model Evaluation
 
